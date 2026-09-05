@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>TikTok Authorization</title></head>
+<body style="font-family: sans-serif; max-width: 600px; margin: 40px auto; text-align: center;">
+<h1>TikTok authorization complete</h1>
+<p>Copy the code below and give it to Jarvis to finish setup:</p>
+<textarea id="code" readonly style="width: 100%; height: 80px; font-size: 16px; padding: 10px;"></textarea>
+<script>
+const params = new URLSearchParams(window.location.search);
+document.getElementById('code').value = params.get('code') || '(no code found in the URL — something went wrong)';
+</script>
+</body></html>
